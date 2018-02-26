@@ -4,11 +4,10 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="6.7.1.201201271219" AlpVersion="6.6.0">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.2.3.201712291251" AlpVersion="8.0.4">
 <Model>
 	<Id>1322492749883</Id>
-	<Name><![CDATA[SimpleSkyResort]]></Name>
-	<ExcludeFromBuild>false</ExcludeFromBuild>
+	<Name><![CDATA[SimpleSkyResort1]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[skyresort]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Minute]]></ModelTimeUnit>
@@ -17,137 +16,41 @@
 		<ActiveObjectClass>
 			<Id>1322492749884</Id>
 			<Name><![CDATA[Main]]></Name>
-			<ExcludeFromBuild>false</ExcludeFromBuild>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
 			<Generic>false</Generic>
-			<GenericParameters><![CDATA[T]]></GenericParameters>
-			<GenericParametersLabel><![CDATA[Generic parameters:]]></GenericParametersLabel>
+			<GenericParameter>
+				<Id>1519635116170</Id>
+				<Name><![CDATA[1519635116170]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameters:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
 			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
 			<MakeDefaultViewArea>true</MakeDefaultViewArea>
 			<SceneGridColor/>
 			<SceneBackgroundColor/>
 			<AgentProperties>
 	 			<SpaceType>CONTINUOUS</SpaceType>			
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10 / getScale().pixelsPerUnit(METER) / 60]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
 			</AgentProperties>
-
-			<DatasetsCreationProperties>
-				<AutoCreate>true</AutoCreate>
-				<RecurrenceCode><![CDATA[1]]></RecurrenceCode>
-			</DatasetsCreationProperties>
-
-			<Variables>
-				<Variable Class="Parameter">
-					<Id>1322506884707</Id>
-					<Name><![CDATA[concentration]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>50</X><Y>210</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Dynamic="false">
-						<Type><![CDATA[int]]></Type>        
-						<DefaultValue><![CDATA[3]]></DefaultValue>
-						<ParameterEditor>
-							<Id>1322506884705</Id>
-							<Name><![CDATA[]]></Name>
-							<ExcludeFromBuild>false</ExcludeFromBuild>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<Separator>false</Separator>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-			</Variables>
-			<Connectors>
-				<Connector>
-					<Id>1322564692223</Id>
-					<Name><![CDATA[connector1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>1180</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObject>1322564658706</SourceEmbeddedObject>
-					<SourceConnectableName>out</SourceConnectableName>
-					<TargetEmbeddedObject>1322564671089</TargetEmbeddedObject>
-					<TargetConnectableName>in</TargetConnectableName>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>80</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1322565721679</Id>
-					<Name><![CDATA[connector]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>840</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObject>1322564644792</SourceEmbeddedObject>
-					<SourceConnectableName>out</SourceConnectableName>
-					<TargetEmbeddedObject>1322565613893</TargetEmbeddedObject>
-					<TargetConnectableName>in</TargetConnectableName>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1322565723601</Id>
-					<Name><![CDATA[connector2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>950</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObject>1322565613893</SourceEmbeddedObject>
-					<SourceConnectableName>out</SourceConnectableName>
-					<TargetEmbeddedObject>1322565170891</TargetEmbeddedObject>
-					<TargetConnectableName>in</TargetConnectableName>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>80</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1322565725544</Id>
-					<Name><![CDATA[connector3]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>1080</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObject>1322565170891</SourceEmbeddedObject>
-					<SourceConnectableName>out</SourceConnectableName>
-					<TargetEmbeddedObject>1322564658706</TargetEmbeddedObject>
-					<TargetConnectableName>in</TargetConnectableName>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>50</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-			</Connectors>
-			<Environments>
-				<Environment>
-					<Id>1322498444626</Id>
-					<Name><![CDATA[ski_slope]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>50</X><Y>110</Y>
-					<Label><X>20</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+			<EnvironmentProperties>
 					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</StepDurationCode>
 					<SpaceType>CONTINUOUS</SpaceType>
 					<WidthCode><![CDATA[500]]></WidthCode>
 					<HeightCode><![CDATA[500]]></HeightCode>
@@ -163,56 +66,153 @@
 					<ConnectionsRangeCode><![CDATA[40]]></ConnectionsRangeCode>
 					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
 					<MCode><![CDATA[10]]></MCode>
-
-				</Environment>
-			</Environments>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1519718400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1519635116235</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<ConnectionsId>1519635116234</ConnectionsId>
+			<Variables>
+				<Variable Class="Parameter">
+					<Id>1322506884707</Id>
+					<Name><![CDATA[concentration]]></Name>
+					<X>50</X><Y>210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[3]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1322506884705</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+			</Variables>
 			<Events>
 				<Event>
 					<Id>1322498730929</Id>
 					<Name><![CDATA[newForeignSkier]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>50</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties TriggerType="condition" Mode="occuresOnce">
-						<Timeout><![CDATA[1]]></Timeout>
-						<Rate><![CDATA[random()*concentration;]]></Rate>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[random()*concentration;]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1322498730876</OccurrenceDate>												
-						<OccurrenceTime><![CDATA[0]]></OccurrenceTime>												
-						<RecurrenceCode><![CDATA[1]]></RecurrenceCode>
+						<OccurrenceDate>1322498730876</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
-						<Action><![CDATA[add_foreign_skiers()]]></Action>
 					</Properties>
+					<Action><![CDATA[add_foreign_skiers()]]></Action>
 				</Event>
 				<Event>
 					<Id>1322498751534</Id>
 					<Name><![CDATA[newLocalSkier]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>50</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties TriggerType="condition" Mode="occuresOnce">
-						<Timeout><![CDATA[1]]></Timeout>
-						<Rate><![CDATA[random()*(concentration/2);]]></Rate>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[random()*(concentration/2);]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1322498751512</OccurrenceDate>												
-						<OccurrenceTime><![CDATA[0]]></OccurrenceTime>												
-						<RecurrenceCode><![CDATA[1]]></RecurrenceCode>
+						<OccurrenceDate>1322498751512</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
-						<Action><![CDATA[add_local_skiers()]]></Action>
 					</Properties>
+					<Action><![CDATA[add_local_skiers()]]></Action>
 				</Event>
 			</Events>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1519635116234</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
 			<EmbeddedObjects>
 				<EmbeddedObject>
 					<Id>0</Id>
 					<Name><![CDATA[foreign_skiers]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>50</X><Y>40</Y>
 					<Label><X>20</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -223,23 +223,29 @@
 						<PackageName><![CDATA[skyresort]]></PackageName>
 						<ClassName><![CDATA[ForeignSkier]]></ClassName>
 					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[]]></GenericParametersSubstitute>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[skyresort]]></PackageName>
+							<ClassName><![CDATA[ForeignSkier]]></ClassName>
+							<ItemName><![CDATA[1519635116237]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[dest_X]]></Name>
-							<Value><![CDATA[]]></Value>	
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[var2]]></Name>
-							<Value><![CDATA[]]></Value>	
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[trustValue]]></Name>
-							<Value><![CDATA[]]></Value>	
 						</Parameter>
 					</Parameters>
-					<Replication><![CDATA[0]]></Replication>	
-					<EnvironmentCode><![CDATA[ski_slope]]></EnvironmentCode>
+					<ReplicationFlag>true</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<EnvironmentCode><![CDATA[this]]></EnvironmentCode>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
 						<Name><![CDATA[foreign_skiersStat]]></Name>
@@ -247,11 +253,48 @@
 						<Expression><![CDATA[]]></Expression>
 						<Condition><![CDATA[]]></Condition>
 					</StatisticsItem>
+					<InEnvironment>true</InEnvironment>	
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>EMPTY</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
 					<Id>0</Id>
 					<Name><![CDATA[local_skiers]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>50</X><Y>70</Y>
 					<Label><X>20</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -262,19 +305,26 @@
 						<PackageName><![CDATA[skyresort]]></PackageName>
 						<ClassName><![CDATA[LocalSkier]]></ClassName>
 					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[]]></GenericParametersSubstitute>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[skyresort]]></PackageName>
+							<ClassName><![CDATA[LocalSkier]]></ClassName>
+							<ItemName><![CDATA[1519635116254]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[dest_X]]></Name>
-							<Value><![CDATA[]]></Value>	
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[var2]]></Name>
-							<Value><![CDATA[]]></Value>	
 						</Parameter>
 					</Parameters>
-					<Replication><![CDATA[0]]></Replication>	
-					<EnvironmentCode><![CDATA[ski_slope]]></EnvironmentCode>
+					<ReplicationFlag>true</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<EnvironmentCode><![CDATA[this]]></EnvironmentCode>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
 						<Name><![CDATA[local_skiersStat]]></Name>
@@ -282,316 +332,44 @@
 						<Expression><![CDATA[]]></Expression>
 						<Condition><![CDATA[]]></Condition>
 					</StatisticsItem>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1322564644792</Id>
-					<Name><![CDATA[lift_source]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>800</X><Y>40</Y>
-					<Label><X>-2</X><Y>-11</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.xj.anylogic.libraries.enterprise]]></PackageName>
-						<ClassName><![CDATA[Source]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[Entity]]></GenericParametersSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[arrivalType]]></Name>
-							<Value><![CDATA[Source.INTERARRIVAL_TIME]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[interarrivalTime]]></Name>
-							<Value><![CDATA[2]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rateSchedule]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rateTable]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[arrivalSchedule]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[arrivalTable]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modifyRate]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rateExpression]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[entitiesPerArrival]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitArrivals]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxArrivals]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[newEntity]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExit]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[entityShape]]></Name>
-							<Value><![CDATA[lift]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[uniqueShape]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[enableRotation]]></Name>
-							<Value><![CDATA[true]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[enableVerticalRotation]]></Name>
-							<Value><![CDATA[false]]></Value>	
-						</Parameter>
-					</Parameters>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1322564658706</Id>
-					<Name><![CDATA[lift_move]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>1130</X><Y>30</Y>
-					<Label><X>-6</X><Y>-7</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.xj.anylogic.libraries.enterprise]]></PackageName>
-						<ClassName><![CDATA[Conveyor]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[Entity]]></GenericParametersSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[lengthDefinedByPath]]></Name>
-							<Value><![CDATA[true]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[length]]></Name>
-							<Value><![CDATA[1000]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[space]]></Name>
-							<Value><![CDATA[1]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[speed]]></Name>
-							<Value><![CDATA[200]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[accumulating]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onAtExit]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExit]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationGuide]]></Name>
-							<Value><![CDATA[lift_path]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationForward]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-					</Parameters>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1322564671089</Id>
-					<Name><![CDATA[lift_sink]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>1260</X><Y>40</Y>
-					<Label><X>7</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.xj.anylogic.libraries.enterprise]]></PackageName>
-						<ClassName><![CDATA[Sink]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[Entity]]></GenericParametersSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-							<Value><![CDATA[double distr = random();if(concentration == 0){}if(concentration == 1){if(distr < 0.2){add_local_skiers();}if(distr >= 0.2 && distr < 0.4){add_foreign_skiers();}if(distr >= 0.4 && distr < 0.6){add_local_skiers();}if(distr >= 0.6 && distr < 0.8){add_foreign_skiers();}if(distr >= 0.80){}}if(concentration == 2){if(distr < 0.2){add_local_skiers();add_local_skiers();}if(distr >= 0.2 && distr < 0.4){add_local_skiers();add_foreign_skiers();}if(distr >= 0.4 && distr < 0.6){add_foreign_skiers();add_foreign_skiers();}if(distr >= 0.6 && distr < 0.8){add_foreign_skiers();add_local_skiers();}if(distr >= 0.80){add_foreign_skiers();add_local_skiers();}}if(concentration == 3){if(distr < 0.2){add_local_skiers();add_local_skiers();add_local_skiers();}if(distr >= 0.2 && distr < 0.4){add_local_skiers();add_local_skiers();add_foreign_skiers();}if(distr >= 0.4 && distr < 0.6){add_local_skiers();add_foreign_skiers();add_foreign_skiers();}if(distr >= 0.6 && distr < 0.8){add_foreign_skiers();add_foreign_skiers();add_foreign_skiers();}if(distr >= 0.80){add_foreign_skiers();add_foreign_skiers();add_local_skiers();}}if(concentration == 4){if(distr < 0.2){add_local_skiers();add_local_skiers();add_local_skiers();add_local_skiers();}if(distr >= 0.2 && distr < 0.4){add_local_skiers();add_local_skiers();add_local_skiers();add_foreign_skiers();}if(distr >= 0.4 && distr < 0.6){add_local_skiers();add_local_skiers();add_foreign_skiers();add_foreign_skiers();}if(distr >= 0.6 && distr < 0.8){add_local_skiers();add_foreign_skiers();add_foreign_skiers();add_foreign_skiers();}if(distr >= 0.80){add_foreign_skiers();add_foreign_skiers();add_foreign_skiers();add_foreign_skiers();}}]]></Value>	
-						</Parameter>
-					</Parameters>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1322565170891</Id>
-					<Name><![CDATA[lift_queue]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>1030</X><Y>20</Y>
-					<Label><X>3</X><Y>-2</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.xj.anylogic.libraries.enterprise]]></PackageName>
-						<ClassName><![CDATA[Queue]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[Entity]]></GenericParametersSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-							<Value><![CDATA[300]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maximumCapacity]]></Name>
-							<Value><![CDATA[true]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onAtExit]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExit]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[enableTimeout]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[timeout]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExitTimeout]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[enablePreemption]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priority]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExitPreempted]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationGuide]]></Name>
-							<Value><![CDATA[lift_path]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationType]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationForward]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[enableStats]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-					</Parameters>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1322565613893</Id>
-					<Name><![CDATA[delay]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
-					<X>900</X><Y>30</Y>
-					<Label><X>9</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>false</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.xj.anylogic.libraries.enterprise]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParametersSubstitute><![CDATA[Entity]]></GenericParametersSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[delayTimeDefinedByPath]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTime]]></Name>
-							<Value><![CDATA[2]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[speed]]></Name>
-							<Value><![CDATA[0]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maximumCapacity]]></Name>
-							<Value><![CDATA[true]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExit]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationGuide]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationType]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[animationForward]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[enableStats]]></Name>
-							<Value><![CDATA[]]></Value>	
-						</Parameter>
-					</Parameters>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InEnvironment>true</InEnvironment>	
+					<InitialSpeedCode Class="CodeUnitValue">
+						<Code><![CDATA[10]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</InitialSpeedCode>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>EMPTY</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
 				</EmbeddedObject>
 			</EmbeddedObjects>
 
@@ -599,16 +377,14 @@
 				<Rectangle>
 					<Id>1322566529212</Id>
 					<Name><![CDATA[rectangle12]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>210</X><Y>830</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -624,16 +400,14 @@
 				<Rectangle>
 					<Id>1322566462198</Id>
 					<Name><![CDATA[rectangle9]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>210</X><Y>860</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -649,16 +423,14 @@
 				<Rectangle>
 					<Id>1322566291867</Id>
 					<Name><![CDATA[rectangle7]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>210</X><Y>-10</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>true</ShowIn3D>
 					<Z>-1</Z>
 					<ZHeight>-1</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -674,16 +446,14 @@
 				<Polyline>
 					<Id>1322501986292</Id>
 					<Name><![CDATA[slope]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>450</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>true</ShowIn3D>
 					<Z>-1</Z>
 					<ZHeight>-1</ZHeight>
 					<LineWidth>6</LineWidth>
@@ -708,50 +478,54 @@
 				<EmbeddedObjectPresentation>
 					<Id>1322498444627</Id>
 					<Name><![CDATA[foreign_skiers_presentation]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>450</X><Y>78</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<ReplicationCode><![CDATA[foreign_skiers.size()]]></ReplicationCode>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
+					<DrawingMode>POSITION_WITH_OFFSET</DrawingMode>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
 				</EmbeddedObjectPresentation>
 				<EmbeddedObjectPresentation>
 					<Id>1322498621490</Id>
 					<Name><![CDATA[local_skiers_presentation]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>449</X><Y>81</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<ReplicationCode><![CDATA[local_skiers.size()]]></ReplicationCode>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
+					<DrawingMode>POSITION_WITH_OFFSET</DrawingMode>
+					<ScaleType>AUTOMATICALLY_CALCULATED</ScaleType>
+					<GISScaleForRealEmbeddedObjectPresentationSize>1000</GISScaleForRealEmbeddedObjectPresentationSize>
+					<GISScaleForFixedEmbeddedObjectPresentationSize>1000000000</GISScaleForFixedEmbeddedObjectPresentationSize>
+					<Latitude>0.0</Latitude>
+					<Longitude>0.0</Longitude>
 				</EmbeddedObjectPresentation>
 				<Text>
 					<Id>1322509283305</Id>
 					<Name><![CDATA[text]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>50</X><Y>300</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
@@ -766,16 +540,14 @@
 				<Text>
 					<Id>1322509283306</Id>
 					<Name><![CDATA[text1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>150</X><Y>300</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
@@ -790,16 +562,14 @@
 				<Text>
 					<Id>1322509283307</Id>
 					<Name><![CDATA[text2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>100</X><Y>260</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
@@ -815,16 +585,14 @@
 				<Text>
 					<Id>1322509338627</Id>
 					<Name><![CDATA[text3]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>100</X><Y>240</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
@@ -839,16 +607,14 @@
 				<Polyline>
 					<Id>1322559924659</Id>
 					<Name><![CDATA[lift_path]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1020</X><Y>810</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>false</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -876,16 +642,14 @@
 				<Rectangle>
 					<Id>1322562014143</Id>
 					<Name><![CDATA[rectangle]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1050</X><Y>810</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -901,16 +665,14 @@
 				<Rectangle>
 					<Id>1322562055170</Id>
 					<Name><![CDATA[rectangle1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>363</X><Y>166</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -926,16 +688,14 @@
 				<Rectangle>
 					<Id>1322562055780</Id>
 					<Name><![CDATA[rectangle2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>363</X><Y>330</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -951,16 +711,14 @@
 				<Rectangle>
 					<Id>1322562056469</Id>
 					<Name><![CDATA[rectangle3]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>340</X><Y>10</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -976,16 +734,14 @@
 				<Rectangle>
 					<Id>1322562056713</Id>
 					<Name><![CDATA[rectangle4]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>360</X><Y>556</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1001,16 +757,14 @@
 				<Rectangle>
 					<Id>1322562056887</Id>
 					<Name><![CDATA[rectangle5]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>362</X><Y>791</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1026,16 +780,14 @@
 				<Rectangle>
 					<Id>1322562057069</Id>
 					<Name><![CDATA[rectangle6]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>455</X><Y>810</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1051,16 +803,14 @@
 				<Rectangle>
 					<Id>1322562057384</Id>
 					<Name><![CDATA[rectangle8]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>740</X><Y>810</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1076,16 +826,14 @@
 				<Rectangle>
 					<Id>1322562136342</Id>
 					<Name><![CDATA[rectangle10]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>545</X><Y>10</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1101,16 +849,14 @@
 				<Rectangle>
 					<Id>1322562274540</Id>
 					<Name><![CDATA[rectangle11]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>345</X><Y>50</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1126,16 +872,14 @@
 				<Oval>
 					<Id>1322562371614</Id>
 					<Name><![CDATA[oval]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1052</X><Y>814</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1151,16 +895,14 @@
 				<Oval>
 					<Id>1322562424566</Id>
 					<Name><![CDATA[oval1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>318</X><Y>28</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1176,16 +918,14 @@
 				<Oval>
 					<Id>1322562425143</Id>
 					<Name><![CDATA[oval2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>312</X><Y>118</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1201,16 +941,14 @@
 				<Oval>
 					<Id>1322562425701</Id>
 					<Name><![CDATA[oval3]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>312</X><Y>282</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1226,16 +964,14 @@
 				<Oval>
 					<Id>1322562426049</Id>
 					<Name><![CDATA[oval4]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>308</X><Y>508</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1251,16 +987,14 @@
 				<Oval>
 					<Id>1322562426279</Id>
 					<Name><![CDATA[oval5]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>310</X><Y>743</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1276,16 +1010,14 @@
 				<Oval>
 					<Id>1322562426458</Id>
 					<Name><![CDATA[oval6]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>458</X><Y>810</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1301,16 +1033,14 @@
 				<Oval>
 					<Id>1322562426599</Id>
 					<Name><![CDATA[oval7]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>742</X><Y>812</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1326,16 +1056,14 @@
 				<Oval>
 					<Id>1322562460690</Id>
 					<Name><![CDATA[oval8]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>342</X><Y>12</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1351,16 +1079,14 @@
 				<Oval>
 					<Id>1322562468225</Id>
 					<Name><![CDATA[oval9]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>548</X><Y>12</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -1376,16 +1102,14 @@
 				<Polyline>
 					<Id>1322562508071</Id>
 					<Name><![CDATA[polyline]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1050</X><Y>810</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>3</LineWidth>
@@ -1412,16 +1136,14 @@
 				<Image>
 					<Id>1322566057869</Id>
 					<Name><![CDATA[image]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>730</X><Y>140</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1434,16 +1156,14 @@
 				<Image>
 					<Id>1322566129112</Id>
 					<Name><![CDATA[image1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1060</X><Y>470</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1456,16 +1176,14 @@
 				<Image>
 					<Id>1322566129663</Id>
 					<Name><![CDATA[image2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1060</X><Y>640</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1478,16 +1196,14 @@
 				<Image>
 					<Id>1322566129747</Id>
 					<Name><![CDATA[image3]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1040</X><Y>530</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1500,16 +1216,14 @@
 				<Image>
 					<Id>1322566129825</Id>
 					<Name><![CDATA[image4]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>660</X><Y>20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1522,16 +1236,14 @@
 				<Image>
 					<Id>1322566129907</Id>
 					<Name><![CDATA[image5]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>570</X><Y>20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1544,16 +1256,14 @@
 				<Image>
 					<Id>1322566129984</Id>
 					<Name><![CDATA[image6]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>990</X><Y>440</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1566,16 +1276,14 @@
 				<Image>
 					<Id>1322566130060</Id>
 					<Name><![CDATA[image7]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>920</X><Y>350</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1588,16 +1296,14 @@
 				<Image>
 					<Id>1322566130136</Id>
 					<Name><![CDATA[image8]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1010</X><Y>590</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1610,16 +1316,14 @@
 				<Image>
 					<Id>1322566130211</Id>
 					<Name><![CDATA[image9]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>960</X><Y>530</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1632,16 +1336,14 @@
 				<Image>
 					<Id>1322566130287</Id>
 					<Name><![CDATA[image10]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>930</X><Y>470</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1654,16 +1356,14 @@
 				<Image>
 					<Id>1322566130363</Id>
 					<Name><![CDATA[image11]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>870</X><Y>410</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1676,16 +1376,14 @@
 				<Image>
 					<Id>1322566130441</Id>
 					<Name><![CDATA[image12]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>840</X><Y>360</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1698,16 +1396,14 @@
 				<Image>
 					<Id>1322566130516</Id>
 					<Name><![CDATA[image13]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>830</X><Y>290</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1720,16 +1416,14 @@
 				<Image>
 					<Id>1322566130601</Id>
 					<Name><![CDATA[image14]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>870</X><Y>240</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1742,16 +1436,14 @@
 				<Image>
 					<Id>1322566130676</Id>
 					<Name><![CDATA[image15]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>760</X><Y>290</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1764,16 +1456,14 @@
 				<Image>
 					<Id>1322566130752</Id>
 					<Name><![CDATA[image16]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>680</X><Y>180</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1786,16 +1476,14 @@
 				<Image>
 					<Id>1322566130828</Id>
 					<Name><![CDATA[image17]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>710</X><Y>80</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1808,16 +1496,14 @@
 				<Image>
 					<Id>1322566130903</Id>
 					<Name><![CDATA[image18]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>730</X><Y>210</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1830,16 +1516,14 @@
 				<Image>
 					<Id>1322566130980</Id>
 					<Name><![CDATA[image19]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>660</X><Y>120</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1852,16 +1536,14 @@
 				<Image>
 					<Id>1322566131056</Id>
 					<Name><![CDATA[image20]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>620</X><Y>60</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1874,16 +1556,14 @@
 				<Image>
 					<Id>1322566178120</Id>
 					<Name><![CDATA[image21]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>130</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1896,16 +1576,14 @@
 				<Image>
 					<Id>1322566178614</Id>
 					<Name><![CDATA[image22]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>190</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1918,16 +1596,14 @@
 				<Image>
 					<Id>1322566178790</Id>
 					<Name><![CDATA[image23]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>280</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1940,16 +1616,14 @@
 				<Image>
 					<Id>1322566178973</Id>
 					<Name><![CDATA[image24]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>380</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1962,16 +1636,14 @@
 				<Image>
 					<Id>1322566179105</Id>
 					<Name><![CDATA[image25]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>410</X><Y>460</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -1984,16 +1656,14 @@
 				<Image>
 					<Id>1322566179234</Id>
 					<Name><![CDATA[image26]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>570</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2006,16 +1676,14 @@
 				<Image>
 					<Id>1322566179416</Id>
 					<Name><![CDATA[image27]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>700</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2028,16 +1696,14 @@
 				<Image>
 					<Id>1322566179550</Id>
 					<Name><![CDATA[image28]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>790</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2050,16 +1716,14 @@
 				<Image>
 					<Id>1322566179692</Id>
 					<Name><![CDATA[image29]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>270</X><Y>860</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2072,16 +1736,14 @@
 				<Image>
 					<Id>1322566179833</Id>
 					<Name><![CDATA[image30]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>320</X><Y>810</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2094,16 +1756,14 @@
 				<Image>
 					<Id>1322566179985</Id>
 					<Name><![CDATA[image31]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>340</X><Y>860</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2116,16 +1776,14 @@
 				<Image>
 					<Id>1322566180163</Id>
 					<Name><![CDATA[image32]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>390</X><Y>820</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2138,16 +1796,14 @@
 				<Image>
 					<Id>1322566180302</Id>
 					<Name><![CDATA[image33]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>460</X><Y>820</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2160,16 +1816,14 @@
 				<Image>
 					<Id>1322566180438</Id>
 					<Name><![CDATA[image34]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>580</X><Y>860</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2182,16 +1836,14 @@
 				<Image>
 					<Id>1322566180599</Id>
 					<Name><![CDATA[image35]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>530</X><Y>820</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2204,16 +1856,14 @@
 				<Image>
 					<Id>1322566180741</Id>
 					<Name><![CDATA[image36]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>640</X><Y>850</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2226,16 +1876,14 @@
 				<Image>
 					<Id>1322566180890</Id>
 					<Name><![CDATA[image37]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>780</X><Y>820</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2248,16 +1896,14 @@
 				<Image>
 					<Id>1322566181028</Id>
 					<Name><![CDATA[image38]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>930</X><Y>850</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2270,16 +1916,14 @@
 				<Image>
 					<Id>1322566181163</Id>
 					<Name><![CDATA[image39]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>860</X><Y>830</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2292,16 +1936,14 @@
 				<Image>
 					<Id>1322566181334</Id>
 					<Name><![CDATA[image40]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>970</X><Y>820</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2314,16 +1956,14 @@
 				<Image>
 					<Id>1322566181628</Id>
 					<Name><![CDATA[image42]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1120</X><Y>670</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2336,16 +1976,14 @@
 				<Image>
 					<Id>1322566181782</Id>
 					<Name><![CDATA[image43]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1100</X><Y>580</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2358,16 +1996,14 @@
 				<Image>
 					<Id>1322566181928</Id>
 					<Name><![CDATA[image44]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1110</X><Y>760</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2380,16 +2016,14 @@
 				<Image>
 					<Id>1322566232254</Id>
 					<Name><![CDATA[image45]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>250</X><Y>740</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2402,16 +2036,14 @@
 				<Image>
 					<Id>1322566232472</Id>
 					<Name><![CDATA[image46]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>360</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2424,16 +2056,14 @@
 				<Image>
 					<Id>1322566232670</Id>
 					<Name><![CDATA[image47]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>420</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2446,16 +2076,14 @@
 				<Image>
 					<Id>1322566232796</Id>
 					<Name><![CDATA[image48]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>230</X><Y>490</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2468,16 +2096,14 @@
 				<Image>
 					<Id>1322566232938</Id>
 					<Name><![CDATA[image49]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>220</X><Y>560</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2490,16 +2116,14 @@
 				<Image>
 					<Id>1322566233102</Id>
 					<Name><![CDATA[image50]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>250</X><Y>590</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2512,16 +2136,14 @@
 				<Image>
 					<Id>1322566233254</Id>
 					<Name><![CDATA[image51]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>230</X><Y>630</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2534,16 +2156,14 @@
 				<Image>
 					<Id>1322566233413</Id>
 					<Name><![CDATA[image52]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>200</X><Y>750</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2556,16 +2176,14 @@
 				<Image>
 					<Id>1322566233556</Id>
 					<Name><![CDATA[image53]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>230</X><Y>690</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2578,16 +2196,14 @@
 				<Image>
 					<Id>1322566251448</Id>
 					<Name><![CDATA[image54]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>260</X><Y>540</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2600,16 +2216,14 @@
 				<Image>
 					<Id>1322566251664</Id>
 					<Name><![CDATA[image55]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>580</X><Y>60</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2622,16 +2236,14 @@
 				<Image>
 					<Id>1322566251802</Id>
 					<Name><![CDATA[image56]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>370</X><Y>90</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2644,16 +2256,14 @@
 				<Image>
 					<Id>1322566251948</Id>
 					<Name><![CDATA[image57]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>250</X><Y>50</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2666,16 +2276,14 @@
 				<Image>
 					<Id>1322566252092</Id>
 					<Name><![CDATA[image58]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>120</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2688,16 +2296,14 @@
 				<Image>
 					<Id>1322566252247</Id>
 					<Name><![CDATA[image59]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>200</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2710,16 +2316,14 @@
 				<Image>
 					<Id>1322566252324</Id>
 					<Name><![CDATA[image60]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>250</X><Y>290</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2732,16 +2336,14 @@
 				<Image>
 					<Id>1322582751108</Id>
 					<Name><![CDATA[image61]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>780</X><Y>210</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>100</Width>
 					<Height>70</Height>
@@ -2754,16 +2356,14 @@
 				<Image>
 					<Id>1322582776514</Id>
 					<Name><![CDATA[image62]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1040</X><Y>710</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>100</Width>
 					<Height>70</Height>
@@ -2776,16 +2376,14 @@
 				<Image>
 					<Id>1322582896989</Id>
 					<Name><![CDATA[image63]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>750</X><Y>250</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>40</Width>
 					<Height>50</Height>
@@ -2798,16 +2396,14 @@
 				<Image>
 					<Id>1322582934190</Id>
 					<Name><![CDATA[image64]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1050</X><Y>760</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>40</Width>
 					<Height>50</Height>
@@ -2820,16 +2416,14 @@
 				<Image>
 					<Id>1322582944948</Id>
 					<Name><![CDATA[image65]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>400</X><Y>620</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>40</Width>
 					<Height>50</Height>
@@ -2842,16 +2436,14 @@
 				<Image>
 					<Id>1322582951128</Id>
 					<Name><![CDATA[image66]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>380</X><Y>230</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>40</Width>
 					<Height>50</Height>
@@ -2864,16 +2456,14 @@
 				<Image>
 					<Id>1322582970204</Id>
 					<Name><![CDATA[image67]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>1000</X><Y>380</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>60</Width>
 					<Height>40</Height>
@@ -2886,16 +2476,14 @@
 				<Image>
 					<Id>1322645237050</Id>
 					<Name><![CDATA[lift]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>-50</X><Y>10</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>30</Width>
 					<Height>50</Height>
@@ -2908,16 +2496,14 @@
 				<Rectangle>
 					<Id>1322645995554</Id>
 					<Name><![CDATA[rectangle13]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>321</X><Y>798</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -2933,16 +2519,14 @@
 				<Oval>
 					<Id>1322645995558</Id>
 					<Name><![CDATA[oval10]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>324</X><Y>798</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -2961,7 +2545,6 @@
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1322507068140</Id>
 					<Name><![CDATA[slider]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>50</X><Y>270</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -2972,6 +2555,7 @@
                         <EmbeddedIcon>false</EmbeddedIcon>				
 						<FillColor/>
 						<VisibleCode><![CDATA[true]]></VisibleCode>
+						<Enabled>true</Enabled>
 						<EnableExpression><![CDATA[true]]></EnableExpression>
 					</BasicProperties>
 					<ExtendedProperties>
@@ -2984,44 +2568,100 @@
 					</ExtendedProperties>
 				</Control>
 			</Controls>
+
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1322496640429</Id>
 			<Name><![CDATA[ForeignSkier]]></Name>
-			<Description><![CDATA[A skier that has to use roaming as he is from abroad]]></Description> 
-			<ExcludeFromBuild>false</ExcludeFromBuild>
+			<Description><![CDATA[A skier that has to use roaming as he is from abroad]]></Description>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<StartupCode><![CDATA[setRotation(0,true);jumpTo((random()*130),0.0);double var = random(); if (var < 0.5){setVelocity(25);} else {setVelocity(50*var);};moveTo((random()*600),640);dest_X=getTargetX();]]></StartupCode>
+			<StartupCode><![CDATA[setRotation(0);jumpTo((random()*130),0.0);double var = random(); if (var < 0.5){setVelocity(25);} else {setVelocity(50*var);};moveTo((random()*600),640);dest_X=getTargetX();]]></StartupCode>
 			<Generic>false</Generic>
-			<GenericParameters><![CDATA[T]]></GenericParameters>
-			<GenericParametersLabel><![CDATA[Generic parameters:]]></GenericParametersLabel>
-			<Agent>true</Agent>
+			<GenericParameter>
+				<Id>1519635116237</Id>
+				<Name><![CDATA[1519635116237]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameters:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
 			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
 			<MakeDefaultViewArea>true</MakeDefaultViewArea>
 			<SceneGridColor/>
 			<SceneBackgroundColor/>
 			<AgentProperties>
 	 			<SpaceType>CONTINUOUS</SpaceType>			
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10 / getScale().pixelsPerUnit(METER) / 60]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
 				<OnArrival><![CDATA[get_Main().remove_foreign_skiers(this);]]></OnArrival>
-				<StatechartNames>
-					<Name>statechart</Name>
-				</StatechartNames>
 			</AgentProperties>
-
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
 			<DatasetsCreationProperties>
 				<AutoCreate>true</AutoCreate>
-				<RecurrenceCode><![CDATA[1]]></RecurrenceCode>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1519718400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
 			</DatasetsCreationProperties>
-
+			<ScaleRuler>
+				<Id>1519635116252</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<ConnectionsId>1519635116251</ConnectionsId>
 			<Variables>
 				<Variable Class="PlainVariable">
 					<Id>1326293315546</Id>
 					<Name><![CDATA[connected_ap_index]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3029,13 +2669,14 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
-						<InitialValue><![CDATA[0]]></InitialValue>                 	
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1326820087873</Id>
 					<Name><![CDATA[conn_status]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3043,75 +2684,77 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
-						<InitialValue><![CDATA[0]]></InitialValue>                 	
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1322651017020</Id>
 					<Name><![CDATA[dest_X]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Dynamic="false">
-						<Type><![CDATA[double]]></Type>        
-						<DefaultValue><![CDATA[]]></DefaultValue>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
 						<ParameterEditor>
 							<Id>1322651017018</Id>
-							<Name><![CDATA[]]></Name>
-							<ExcludeFromBuild>false</ExcludeFromBuild>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<Separator>false</Separator>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1324308096959</Id>
 					<Name><![CDATA[var2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Dynamic="false">
-						<Type><![CDATA[int]]></Type>        
-						<DefaultValue><![CDATA[0]]></DefaultValue>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1324308096957</Id>
-							<Name><![CDATA[]]></Name>
-							<ExcludeFromBuild>false</ExcludeFromBuild>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<Separator>false</Separator>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1326293315551</Id>
 					<Name><![CDATA[trustValue]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Dynamic="false">
-						<Type><![CDATA[int]]></Type>        
-						<DefaultValue><![CDATA[5]]></DefaultValue>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[5]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1326293315549</Id>
-							<Name><![CDATA[]]></Name>
-							<ExcludeFromBuild>false</ExcludeFromBuild>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<Separator>false</Separator>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
@@ -3120,7 +2763,6 @@
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1326293315553</Id>
 					<Name><![CDATA[Connected]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>160</X><Y>120</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3134,7 +2776,6 @@
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1326293315555</Id>
 					<Name><![CDATA[Disconnected]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>160</X><Y>50</Y>
 					<Label><X>0</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3148,7 +2789,6 @@
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1326293315557</Id>
 					<Name><![CDATA[statechart]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>200</X><Y>30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3164,7 +2804,6 @@
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1326293315559</Id>
 					<Name><![CDATA[transition]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>220</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3174,10 +2813,17 @@
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
+					<IconOffset>14.0</IconOffset>
 					<Properties Source="1326293315555" Target="1326293315553" Trigger="message">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[inRange() == true]]></Condition>
-						<Rate><![CDATA[0.1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[0.1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[equalsTo]]></FilterType>
@@ -3188,7 +2834,6 @@
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1326293315561</Id>
 					<Name><![CDATA[transition1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>180</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3198,10 +2843,17 @@
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>-40</Y></Point>
 					</Points>
+					<IconOffset>14.0</IconOffset>
 					<Properties Source="1326293315553" Target="1326293315555" Trigger="message">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[inRange() == false]]></Condition>
-						<Rate><![CDATA[0.1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[0.1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[String]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[equalsTo]]></FilterType>
@@ -3214,41 +2866,64 @@
 				<Event>
 					<Id>1324304404680</Id>
 					<Name><![CDATA[changeDirection]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties TriggerType="timeout" Mode="cyclic">
-						<Timeout><![CDATA[1]]></Timeout>
-						<Rate><![CDATA[1]]></Rate>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1324304404647</OccurrenceDate>												
-						<OccurrenceTime><![CDATA[0]]></OccurrenceTime>												
-						<RecurrenceCode><![CDATA[2]]></RecurrenceCode>
+						<OccurrenceDate>1324304404647</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[2]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
-						<Action><![CDATA[if(getY() > 540){moveTo(dest_X,640);changeDirection.reset();}else{if(var2 == 0){moveTo((dest_X + 300),640);var2 = 1;}else{moveTo((dest_X - 300),640);var2 = 0;}}]]></Action>
 					</Properties>
+					<Action><![CDATA[if(getY() > 540){moveTo(dest_X,640);changeDirection.reset();}else{if(var2 == 0){moveTo((dest_X + 300),640);var2 = 1;}else{moveTo((dest_X - 300),640);var2 = 0;}}]]></Action>
 				</Event>
 				<Event>
 					<Id>1326293315548</Id>
 					<Name><![CDATA[event]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties TriggerType="timeout" Mode="cyclic">
-						<Timeout><![CDATA[1]]></Timeout>
-						<Rate><![CDATA[1]]></Rate>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1306928728513</OccurrenceDate>												
-						<OccurrenceTime><![CDATA[0]]></OccurrenceTime>												
-						<RecurrenceCode><![CDATA[0.1]]></RecurrenceCode>
+						<OccurrenceDate>1306928728513</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[0.1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
-						<Action><![CDATA[int hotspot = getClosest();
+					</Properties>
+					<Action><![CDATA[int hotspot = getClosest();
 if ( hotspot >= 0){
  statechart.fireEvent("IN RANGE!");
  }
@@ -3256,15 +2931,14 @@ else{
 statechart.fireEvent("OUT OF RANGE");
 disconnectFromAll();
 }]]></Action>
-					</Properties>
 				</Event>
 			</Events>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[ArrayList]]></ReturnType>
 					<Id>1326293315535</Id>
 					<Name><![CDATA[inRange]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3280,10 +2954,10 @@ return inrange;
 ]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
 					<ReturnType><![CDATA[int]]></ReturnType>
 					<Id>1326293315544</Id>
 					<Name><![CDATA[getClosest]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>20</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3311,21 +2985,61 @@ connectTo(get_Main().local_skiers.get(best_hotspot));
 return best_hotspot;]]></Body>
 				</Function>
 			</Functions>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1519635116251</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<StatechartReference>
+						<PackageName><![CDATA[skyresort]]></PackageName>
+						<ClassName><![CDATA[ForeignSkier]]></ClassName>
+						<ItemName><![CDATA[statechart]]></ItemName>
+					</StatechartReference>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+			<ContainerLinks>
+				<ContainerLink>
+					<Id>1519635126923</Id>
+					<Name><![CDATA[main]]></Name>
+					<X>50</X><Y>-100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[skyresort]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+					</ActiveObjectClass>
+				</ContainerLink>
+			</ContainerLinks>
 
 			<Shapes>
 				<Image>
 					<Id>1322644264236</Id>
 					<Name><![CDATA[image]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>-5</X><Y>-11</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>10</Width>
 					<Height>20</Height>
@@ -3338,17 +3052,17 @@ return best_hotspot;]]></Body>
 				<Line>
 					<Id>1326891301272</Id>
 					<Name><![CDATA[line]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>4</X><Y>-3</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<ReplicationCode><![CDATA[getConnectionsNumber()]]></ReplicationCode>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<ReplicationCode Class="CodeValue">
+						<Code><![CDATA[getConnectionsNumber()]]></Code>
+					</ReplicationCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>3</LineWidth>
@@ -3366,45 +3080,104 @@ return best_hotspot;]]></Body>
 					<Dz>0</Dz>
 				</Line>
 			</Shapes>
+
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1322496681762</Id>
 			<Name><![CDATA[LocalSkier]]></Name>
-			<Description><![CDATA[A skier that has free Internet connectivity as he is local, thus no roaming]]></Description> 
-			<ExcludeFromBuild>false</ExcludeFromBuild>
+			<Description><![CDATA[A skier that has free Internet connectivity as he is local, thus no roaming]]></Description>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<StartupCode><![CDATA[setRotation(0,true);jumpTo((random()*130),0.0);double var = random(); if (var < 0.5){setVelocity(25);} else {setVelocity(50*var);};moveTo((random()*600),640);dest_X=getTargetX();]]></StartupCode>
+			<StartupCode><![CDATA[setRotation(0);
+jumpTo((random()*130),0.0);
+double var = random(); 
+if (var < 0.5){setVelocity(25);} 
+else {setVelocity(50*var);};moveTo((random()*600),640);dest_X=getTargetX();]]></StartupCode>
 			<Generic>false</Generic>
-			<GenericParameters><![CDATA[T]]></GenericParameters>
-			<GenericParametersLabel><![CDATA[Generic parameters:]]></GenericParametersLabel>
-			<Agent>true</Agent>
+			<GenericParameter>
+				<Id>1519635116254</Id>
+				<Name><![CDATA[1519635116254]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameters:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
 			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
 			<MakeDefaultViewArea>true</MakeDefaultViewArea>
 			<SceneGridColor/>
 			<SceneBackgroundColor/>
 			<AgentProperties>
 	 			<SpaceType>CONTINUOUS</SpaceType>			
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
-				<RotationCode><![CDATA[0]]></RotationCode>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10 / getScale().pixelsPerUnit(METER) / 60]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
 				<OnArrival><![CDATA[get_Main().remove_local_skiers(this);]]></OnArrival>
-				<StatechartNames>
-					<Name>toWaitforConn</Name>
-				</StatechartNames>
 			</AgentProperties>
-
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
 			<DatasetsCreationProperties>
 				<AutoCreate>true</AutoCreate>
-				<RecurrenceCode><![CDATA[1]]></RecurrenceCode>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1519718400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
 			</DatasetsCreationProperties>
-
+			<ScaleRuler>
+				<Id>1519635116258</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<ConnectionsId>1519635116257</ConnectionsId>
 			<Variables>
 				<Variable Class="PlainVariable">
 					<Id>1326820266434</Id>
 					<Name><![CDATA[conn_status]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>60</X><Y>410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3412,66 +3185,66 @@ return best_hotspot;]]></Body>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
-						<InitialValue><![CDATA[0]]></InitialValue>                 	
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1322650972649</Id>
 					<Name><![CDATA[dest_X]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>60</X><Y>450</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Dynamic="false">
-						<Type><![CDATA[double]]></Type>        
-						<DefaultValue><![CDATA[]]></DefaultValue>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
 						<ParameterEditor>
 							<Id>1322650972647</Id>
-							<Name><![CDATA[]]></Name>
-							<ExcludeFromBuild>false</ExcludeFromBuild>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<Separator>false</Separator>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1324308070357</Id>
 					<Name><![CDATA[var2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>60</X><Y>510</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Dynamic="false">
-						<Type><![CDATA[int]]></Type>        
-						<DefaultValue><![CDATA[0]]></DefaultValue>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1324308070355</Id>
-							<Name><![CDATA[]]></Name>
-							<ExcludeFromBuild>false</ExcludeFromBuild>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<Separator>false</Separator>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
 				<Variable Class="CollectionVariable">
 					<Id>1326295516912</Id>
 					<Name><![CDATA[connected_people]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>60</X><Y>540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
-						<CollectionClass><![CDATA[java.util.ArrayList]]></CollectionClass>
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
 						<ElementClass><![CDATA[ForeignSkier]]></ElementClass>
 						<ValueElementClass><![CDATA[String]]></ValueElementClass>
 					</Properties>
@@ -3482,7 +3255,6 @@ return best_hotspot;]]></Body>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1322508437589</Id>
 					<Name><![CDATA[wait_for_conn]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>190</X><Y>70</Y>
 					<Label><X>0</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3496,7 +3268,6 @@ return best_hotspot;]]></Body>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1322508509298</Id>
 					<Name><![CDATA[asses_trust]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>190</X><Y>150</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3510,7 +3281,6 @@ return best_hotspot;]]></Body>
 				<StatechartElement Class="Branch" ParentState="ROOT_NODE">
 					<Id>1322508527325</Id>
 					<Name><![CDATA[eval]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3523,7 +3293,6 @@ return best_hotspot;]]></Body>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1322508577371</Id>
 					<Name><![CDATA[allow_conn]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>190</X><Y>300</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3538,7 +3307,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1322508389475</Id>
 					<Name><![CDATA[toWaitforConn]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3554,7 +3322,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="wait_for_conn" ParentStateId="1322508437589">
 					<Id>1322508457507</Id>
 					<Name><![CDATA[no_conn]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>260</X><Y>100</Y>
 					<Label><X>30</X><Y>-5</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3564,10 +3331,17 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>30</X><Y>-20</Y></Point>
 					</Points>
+					<IconOffset>12.027756377319946</IconOffset>
 					<Properties Source="1322508437589" Target="1322508437589" Trigger="timeout">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
-						<Rate><![CDATA[1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
@@ -3578,7 +3352,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1322508493970</Id>
 					<Name><![CDATA[conn_request]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>100</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3588,10 +3361,17 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
+					<IconOffset>19.0</IconOffset>
 					<Properties Source="1322508437589" Target="1322508509298" Trigger="timeout">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
-						<Rate><![CDATA[1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
@@ -3602,7 +3382,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1322508524595</Id>
 					<Name><![CDATA[choice]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>180</Y>
 					<Label><X>10</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3612,10 +3391,17 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
+					<IconOffset>19.0</IconOffset>
 					<Properties Source="1322508509298" Target="1322508527325" Trigger="timeout">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
-						<Rate><![CDATA[1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
@@ -3626,7 +3412,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1322508550251</Id>
 					<Name><![CDATA[reject]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>228</X><Y>240</Y>
 					<Label><X>-113</X><Y>-65</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3638,10 +3423,17 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 						<Point><X>-84</X><Y>-42</Y></Point>
 						<Point><X>-38</X><Y>-150</Y></Point>
 					</Points>
+					<IconOffset>108.32533132749353</IconOffset>
 					<Properties Source="1322508527325" Target="1322508437589" Trigger="timeout">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[false]]></Condition>
-						<Rate><![CDATA[1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>false</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
@@ -3652,7 +3444,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1322508573547</Id>
 					<Name><![CDATA[transition]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3662,10 +3453,17 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>50</Y></Point>
 					</Points>
+					<IconOffset>19.0</IconOffset>
 					<Properties Source="1322508527325" Target="1322508577371" Trigger="timeout">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
-						<Rate><![CDATA[1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
@@ -3676,7 +3474,6 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1322508594950</Id>
 					<Name><![CDATA[to_wait]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>240</X><Y>330</Y>
 					<Label><X>-185</X><Y>-70</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -3689,10 +3486,17 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 						<Point><X>-158</X><Y>-157</Y></Point>
 						<Point><X>-50</X><Y>-250</Y></Point>
 					</Points>
+					<IconOffset>221.36291970923176</IconOffset>
 					<Properties Source="1322508577371" Target="1322508437589" Trigger="timeout">
-						<Timeout><![CDATA[1]]></Timeout>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
 						<Condition><![CDATA[true]]></Condition>
-						<Rate><![CDATA[1]]></Rate>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<MessageType><![CDATA[Object]]></MessageType>
 						<DefaultTransition>true</DefaultTransition>
 						<FilterType><![CDATA[unconditionally]]></FilterType>
@@ -3705,39 +3509,90 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Event>
 					<Id>1324307836738</Id>
 					<Name><![CDATA[changeDirection]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>60</X><Y>480</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties TriggerType="timeout" Mode="cyclic">
-						<Timeout><![CDATA[1]]></Timeout>
-						<Rate><![CDATA[1]]></Rate>
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1324304404647</OccurrenceDate>												
-						<OccurrenceTime><![CDATA[0]]></OccurrenceTime>												
-						<RecurrenceCode><![CDATA[2]]></RecurrenceCode>
+						<OccurrenceDate>1324304404647</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[2]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
-						<Action><![CDATA[if(getY() > 540){moveTo(dest_X,640);changeDirection.reset();}else{if(var2 == 0){moveTo((dest_X + 300),640);var2 = 1;}else{moveTo((dest_X - 300),640);var2 = 0;}}]]></Action>
 					</Properties>
+					<Action><![CDATA[if(getY() > 540){moveTo(dest_X,640);changeDirection.reset();}else{if(var2 == 0){moveTo((dest_X + 300),640);var2 = 1;}else{moveTo((dest_X - 300),640);var2 = 0;}}]]></Action>
 				</Event>
 			</Events>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1519635116257</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<StatechartReference>
+						<PackageName><![CDATA[skyresort]]></PackageName>
+						<ClassName><![CDATA[LocalSkier]]></ClassName>
+						<ItemName><![CDATA[toWaitforConn]]></ItemName>
+					</StatechartReference>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+			<ContainerLinks>
+				<ContainerLink>
+					<Id>1519635126924</Id>
+					<Name><![CDATA[main]]></Name>
+					<X>50</X><Y>-100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[skyresort]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+					</ActiveObjectClass>
+				</ContainerLink>
+			</ContainerLinks>
 
 			<Shapes>
 				<Group>
 					<Id>1326287578446</Id>
 					<Name><![CDATA[local_skier]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 
@@ -3745,16 +3600,14 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Image>
 					<Id>1322644188136</Id>
 					<Name><![CDATA[image]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>-5</X><Y>-10</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>10</Width>
 					<Height>20</Height>
@@ -3767,16 +3620,14 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Group>
 					<Id>1322504180392</Id>
 					<Name><![CDATA[group]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 
@@ -3784,16 +3635,14 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Oval>
 					<Id>1322504028618</Id>
 					<Name><![CDATA[oval]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>0</X><Y>0</Y>
 					<Label><X>0</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>2</LineWidth>
@@ -3807,60 +3656,88 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 					<FillMaterial>null</FillMaterial>
 				</Oval>
 			</Shapes>
+
 				</Group>
 			</Shapes>
+
 				</Group>
 			</Shapes>
+
 		</ActiveObjectClass>
-	</ActiveObjectClasses>
+	</ActiveObjectClasses>	
+	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
+	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
+	<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
+	<AbsoluteAccuracy>1.0E-5</AbsoluteAccuracy>
+	<FixedTimeStep>0.001</FixedTimeStep>
+	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
+	<TimeAccuracy>1.0E-5</TimeAccuracy>
+	<Frame>
+		<Width>800</Width>
+		<Height>600</Height>
+	</Frame>
+	<Database>
+		<Logging>false</Logging>
+		<AutoExport>false</AutoExport>
+		<ImportSettings>
+		</ImportSettings>
+		<ExportSettings>
+			<ExportExcelFilePath><![CDATA[]]></ExportExcelFilePath>
+		</ExportSettings>
+	</Database>
+	
+	<RunConfiguration ActiveObjectClassId="1322492749884">
+		<Id>1519635116415</Id>
+		<Name><![CDATA[RunConfiguration]]></Name>
+		<ModelTimeProperties>
+			<StopOption><![CDATA[Stop at specified time]]></StopOption>
+			<InitialDate><![CDATA[1322492749893]]></InitialDate>	
+			<InitialTime><![CDATA[0.0]]></InitialTime>	
+			<FinalDate><![CDATA[1322498749893]]></FinalDate>	
+			<FinalTime><![CDATA[100.0]]></FinalTime>	
+		</ModelTimeProperties>
+		<AnimationProperties>
+			<StopNever>true</StopNever>
+			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<RealTimeScale>1.0</RealTimeScale>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<Maximized>false</Maximized>
+		</AnimationProperties>
+		<Inputs>		
+		</Inputs>
+		<Outputs>
+		</Outputs>
+	</RunConfiguration>
 	<Experiments>	
 		<!--   =========   Simulation Experiment   ========  -->
 		<SimulationExperiment ActiveObjectClassId="1322492749884">
 			<Id>1322492749896</Id>
 			<Name><![CDATA[Simulation]]></Name>
-			<ExcludeFromBuild>false</ExcludeFromBuild>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
-			<Frame>
-				<X>0</X>
-				<Y>0</Y>
-				<Width>800</Width>
-				<Height>600</Height>
-				<Maximized>false</Maximized>
-				<CloseConfirmation>false</CloseConfirmation>
-			</Frame>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>64</MaximumMemory>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
-			<RandomSelectionModeForSimultaneousEvents>false</RandomSelectionModeForSimultaneousEvents>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
-			<AbsoluteAccuracy>1.0E-5</AbsoluteAccuracy>
-			<RelativeAccuracy>1.0E-5</RelativeAccuracy>
-			<TimeAccuracy>1.0E-5</TimeAccuracy>
-			<FixedTimeStep>0.0010</FixedTimeStep>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
 			<SnapshotFile></SnapshotFile>
-			<DiffEquationsNumericalMethod>EULER</DiffEquationsNumericalMethod>
-			<MixedEquationsNumericalMethod>RK45_NEWTON</MixedEquationsNumericalMethod>
-			<AlgebraicEquationsNumericalMethod>MODIFIED_NEWTON</AlgebraicEquationsNumericalMethod>
 
 			<Shapes>
 				<Rectangle>
 					<Id>1326894497997</Id>
 					<Name><![CDATA[rectangle1]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>0</X><Y>-1</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -3876,16 +3753,14 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Text>
 					<Id>1326894497999</Id>
 					<Name><![CDATA[text6]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>10</X><Y>9</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
@@ -3900,16 +3775,14 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Rectangle>
 					<Id>1326894498003</Id>
 					<Name><![CDATA[rectangle]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>0</X><Y>48</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<ZHeight>10</ZHeight>
 					<LineWidth>1</LineWidth>
@@ -3925,16 +3798,14 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 				<Image>
 					<Id>1326894498005</Id>
 					<Name><![CDATA[image]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>228</X><Y>51</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Width>771</Width>
 					<Height>547</Height>
@@ -3942,21 +3813,19 @@ conn_status = this.getConnectionsNumber();]]></EntryAction>
 					<ImageFiles>
 						<ImageFile><![CDATA[cover.jpg]]></ImageFile>
 					</ImageFiles>
-					<OriginalSize>true</OriginalSize>
+					<OriginalSize>false</OriginalSize>
 				</Image>
 				<Text>
 					<Id>1326894498088</Id>
 					<Name><![CDATA[text10]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>10</X><Y>59</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
@@ -3989,17 +3858,15 @@ energy expenditure.]]></Text>
 				<Text>
 					<Id>1322505747012</Id>
 					<Name><![CDATA[text2]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>17</X><Y>452</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<VisibleCode><![CDATA[true]]></VisibleCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
@@ -4014,17 +3881,15 @@ energy expenditure.]]></Text>
 				<Text>
 					<Id>1322505747013</Id>
 					<Name><![CDATA[text3]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>201</X><Y>452</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<VisibleCode><![CDATA[true]]></VisibleCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
@@ -4039,17 +3904,15 @@ energy expenditure.]]></Text>
 				<Text>
 					<Id>1322507215622</Id>
 					<Name><![CDATA[text5]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>113</X><Y>392</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<VisibleCode><![CDATA[true]]></VisibleCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
@@ -4064,17 +3927,15 @@ energy expenditure.]]></Text>
 				<Text>
 					<Id>1322505747014</Id>
 					<Name><![CDATA[text4]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>113</X><Y>407</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<VisibleCode><![CDATA[true]]></VisibleCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Lock>false</Lock>
-					<ShowIn3D>false</ShowIn3D>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
@@ -4093,7 +3954,6 @@ energy expenditure.]]></Text>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1322505441781</Id>
 					<Name><![CDATA[skier_Concentration]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>17</X><Y>416</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -4104,6 +3964,7 @@ energy expenditure.]]></Text>
                         <EmbeddedIcon>false</EmbeddedIcon>				
 						<FillColor/>
 						<VisibleCode><![CDATA[true]]></VisibleCode>
+						<Enabled>true</Enabled>
 						<EnableExpression><![CDATA[true]]></EnableExpression>
 					</BasicProperties>
 					<ExtendedProperties>
@@ -4118,7 +3979,6 @@ energy expenditure.]]></Text>
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1326894498102</Id>
 					<Name><![CDATA[button]]></Name>
-					<ExcludeFromBuild>false</ExcludeFromBuild>
 					<X>47</X><Y>492</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -4129,6 +3989,7 @@ energy expenditure.]]></Text>
                         <EmbeddedIcon>false</EmbeddedIcon>				
 						<FillColor/>
 						<TextColor/>
+						<Enabled>true</Enabled>
 						<ActionCode><![CDATA[if ( getState() == IDLE )
 	run();
 getEngine().getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
@@ -4142,23 +4003,26 @@ getEngine().getPresentation().setPresentable( getEngine().getRoot() );]]></Actio
 					</ExtendedProperties>
 				</Control>
 			</Controls>
+
 			<Parameters>			
 				<Parameter>
 					<ParameterName><![CDATA[parameter]]></ParameterName>
-					<ParameterValue><![CDATA[]]></ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[concentration]]></ParameterName>
-					<ParameterValue><![CDATA[skier_Concentration.getIntValue();]]></ParameterValue>
+					<ParameterValue Class="CodeValue">
+						<Code><![CDATA[skier_Concentration.getIntValue();]]></Code>
+					</ParameterValue>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
 				EnableAntiAliasing="true"
 				EnableEnhancedModelElementsAnimation="true"
-				EnablePanning="true"
-				ToolbarCustomizableAtRuntime="true"
-				EnableZoom="true">
+				ToolbarCustomizableAtRuntime="true">
+				<Maximized>false</Maximized>
+				<CloseConfirmation>false</CloseConfirmation>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<CpuRatio><![CDATA[ratio_1_2]]></CpuRatio>	        
 				<Title><![CDATA[SkyResort : Simulation]]></Title>	
@@ -4181,8 +4045,7 @@ getEngine().getPresentation().setPresentable( getEngine().getRoot() );]]></Actio
 				<UIProperty Name="Toolbar Time scale setup" Value="true"/>
 				<UIProperty Name="Toolbar View" Value="false"/>
 			</PresentationProperties>
-			<ModelTimeProperties 
-				UseCalendar="false">
+			<ModelTimeProperties>
 				<StopOption><![CDATA[Never]]></StopOption>
 				<InitialDate><![CDATA[1322492749893]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
@@ -4191,17 +4054,5 @@ getEngine().getPresentation().setPresentable( getEngine().getRoot() );]]></Actio
 			</ModelTimeProperties>
 		</SimulationExperiment>	
 	</Experiments>
-    <RequiredLibraryReference>
-		<LibraryName><![CDATA[com.xj.anylogic.libraries.pedestrian]]></LibraryName>
-		<VersionMajor>6</VersionMajor>
-		<VersionMinor>1</VersionMinor>
-		<VersionBuild>1</VersionBuild>
-    </RequiredLibraryReference>
-    <RequiredLibraryReference>
-		<LibraryName><![CDATA[com.xj.anylogic.libraries.enterprise]]></LibraryName>
-		<VersionMajor>6</VersionMajor>
-		<VersionMinor>0</VersionMinor>
-		<VersionBuild>3</VersionBuild>
-    </RequiredLibraryReference>
 </Model>
 </AnyLogicWorkspace>
